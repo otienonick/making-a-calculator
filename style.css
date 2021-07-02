@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.calculator{
+    flex: 0 0 50%;
+}
+input{
+    width: 100%;
+    font-size: 7rem;
+    padding: 0.5rem;
+    background: rgb(41,42,56);
+    border: none;
+    outline: none;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s linear;
+}
+
+button{
+    flex: 0 0 25%;
+    border: 1px solid black;
+    padding: 0.25rem 0;
+    font-size: 4rem;
+}
+.grey-button:hover,.yellow-button:hover{
+    background-color: green;
+
+}
+.yellow-button{
+    background:yellow;
+}
+.grey-button{
+    background: grey;
+}
+.equalButton{
+    background: lime;
+}
+.clearButton{
+    background: red;
+}
